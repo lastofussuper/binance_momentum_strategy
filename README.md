@@ -10,27 +10,27 @@ The system emphasizes clean architecture, reproducibility, and extensibility, re
 
 ## Key Features
 
-### 📊 Data Ingestion
+### Data Ingestion
 - Fetches historical market data from Binance API
 - Supports configurable symbols, intervals, and lookback windows
 - Structured data storage for downstream processing
 
-### ⚙️ Feature Engineering
+### Feature Engineering
 - Computes momentum-based indicators from price data
 - Supports configurable lookback periods
 - Modular feature pipeline for easy extension
 
-### 📈 Strategy Engine
+### Strategy Engine
 - Implements momentum-based trading logic
 - Signal generation based on configurable thresholds and parameters
 - Supports long-only strategy (extendable to long/short)
 
-### 🔁 Backtesting Framework
+### Backtesting Framework
 - Simulates trades based on generated signals
 - Tracks positions, PnL, and capital over time
 - Supports configurable assumptions (capital, execution logic)
 
-### 📉 Performance Analysis
+### Performance Analysis
 - Calculates key metrics:
   - Returns
   - Drawdowns

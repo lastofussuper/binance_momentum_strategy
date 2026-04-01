@@ -1,0 +1,23 @@
+market: binance
+timefra: "1h"
+symbols: ["BTCUSDT", "ETHUSDT", "BNBUSDT"]
+
+data:
+  start: "2020-01-01"
+  end: "2021-01-01"
+
+strategy:
+  name: "momentum"
+  lookback_hours: 168 #7 days
+  long_only: true
+
+backtest:
+  fill: "next_open" #signal at t, fill at t+1 open
+  initial_capital: 10000
+
+costs:
+  fee_bps: 10.0 #0.1% per trade
+  slippage_bps: 5.0 #0.05% conservative
+
+risk:
+ max_position: 1.0 #100% of capital in one position
