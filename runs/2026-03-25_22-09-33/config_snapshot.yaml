@@ -1,0 +1,21 @@
+market: binance
+timefra: 1h
+symbols:
+- BTCUSDT
+- ETHUSDT
+- BNBUSDT
+data:
+  start: '2020-01-01'
+  end: '2021-01-01'
+strategy:
+  name: momentum
+  lookback_hours: 168
+  long_only: true
+backtest:
+  fill: next_open
+  initial_capital: 10000
+costs:
+  fee_bps: 10.0
+  slippage_bps: 5.0
+risk:
+  max_position: 1.0
